@@ -1,5 +1,6 @@
+
 streamlit
 google-genai
-tensorflow
+tensorflow-cpu
 numpy
 pillow
