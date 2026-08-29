@@ -10,7 +10,7 @@ Original file is located at
 import os
 
 print(os.path.exists("/content/archive (1).zip"))
-print(os.path.getsize("/content/archive (1).zip"))
+
 
 
 import zipfile
