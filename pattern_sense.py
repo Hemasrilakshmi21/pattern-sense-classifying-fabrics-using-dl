@@ -231,8 +231,6 @@ print("Model Saved Successfully!")
 #     st.success(f"Predicted Pattern: {labels[index]}")
 #     st.write(f"Confidence: {confidence:.2f}%")
 
-!pip -q install streamlit pyngrok
-
 from pyngrok import ngrok
 import threading
 import os
