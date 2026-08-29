@@ -20,9 +20,7 @@ import os
 zip_file = "/content/archive (1).zip"
 
 # Define the extraction directory
-extraction_dir = "/content/dataset"
-
-# Create the extraction directory if it doesn't exist
+extraction_dir = "extracted_data"
 os.makedirs(extraction_dir, exist_ok=True)
 
 # Extract dataset
