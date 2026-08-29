@@ -87,8 +87,6 @@ validation_generator = validation_datagen.flow_from_directory(
 print(f"Found {train_generator.samples} training images belonging to {train_generator.num_classes} classes.")
 print(f"Found {validation_generator.samples} validation images belonging to {validation_generator.num_classes} classes.")
 
-# Install libraries
-!pip -q install tensorflow
 
 # Import libraries
 import os
