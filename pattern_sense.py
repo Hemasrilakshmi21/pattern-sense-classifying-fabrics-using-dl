@@ -11,8 +11,6 @@ import os
 
 print(os.path.exists("/content/archive (1).zip"))
 
-
-
 import zipfile
 import os
 
@@ -22,12 +20,6 @@ zip_file = "/content/archive (1).zip"
 # Define the extraction directory
 extraction_dir = "extracted_data"
 os.makedirs(extraction_dir, exist_ok=True)
-
-# Extract dataset
-with zipfile.ZipFile(zip_file, 'r') as zip_ref:
-    zip_ref.extractall(extraction_dir)
-
-print(f"Dataset Extracted Successfully to {extraction_dir}!")
 
 # Display folder structure of the extracted dataset
 print("Extracted Dataset Structure:")
