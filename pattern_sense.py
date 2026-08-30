@@ -55,15 +55,7 @@ validation_datagen = ImageDataGenerator(
     validation_split=0.2
 )
 
-# Create Training and Validation Generators
-train_generator = train_datagen.flow_from_directory(
-    DATA_DIR,
-    target_size=IMAGE_SIZE,
-    batch_size=BATCH_SIZE,
-    class_mode='categorical',
-    subset='training',
-    seed=42
-)
+model = tf.keras.models.load_model("fabric_classifier.h5")
 
 validation_generator = validation_datagen.flow_from_directory(
     DATA_DIR,
